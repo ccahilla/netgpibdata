@@ -1,0 +1,25 @@
+# Analyzer Details
+deviceName:   AG4395A 
+ipAddress:    10.0.1.61     ## IP or hostname of GPIB Device
+gpibAddress:  10        ## Port of GPIB device, 10 is default 
+
+# Output Parameters
+saveDir:      ~/Git/ctn_labdata/data/20170901_TransBeatnoteSpectrum/
+nameRoot:     TransBeatnote_100kHzStop ## Filename root for output files
+plotResult:   False      ## Whether to plot measured data when finished [True/False]
+plotRefs:     False     ## Whether to plot references with same nameRoot [True/False]
+refDir:       ./        ## Where the reference trace files are stored
+plotScales:   Log,Log   ## Scaling of x and y axes, respectively. [Linear,Log],[Log,Log], etc.
+saveFig:      False     ## If plotResult is true, saves a pdf with same filename [True/False]
+plotTitle:    Transmission Beat Note Spectral Density
+
+# Measurement Parameters
+measType:     Spectrum
+startFreq:    0Hz      ## Start frequency
+stopFreq:     100kHz      ## Stop frequency, 300MHz max
+specType:     Noise     ## [Noise] (i.e. PSD units) or [Spectrum] (power units)
+dualChannel:  Single    ## [ Single ]/[ Dual ]
+channels:     R         ## [R], [A], [B] for single channel. [RA],[AB], etc. for dual
+attenuation:  0         ## dB of input attenuation, i.e. [40], or [auto]
+averages:     16        ## Number of averages 
+bwSpanRatio:  0.1       ## Set resolution bandwidth / span ratio, in percent. [0.01] to [10]

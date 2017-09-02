@@ -4,20 +4,20 @@ ipAddress:     10.0.1.62     ## Ip or hostname of GPIB Device
 gpibAddress:   10        ## port of GPIB device (10) is default 
 
 # Output Parameters
-saveDir:        ./        ## Path where output is saved, use [./] for current dir
-nameRoot:       SPSR785   ## Filename root for output files
-plotResult:     True      ## Whether to plot measured data when finished [True/False]
+saveDir:        ~/Git/ctn_labdata/data/20170901_TransBeatnoteSpectrum/        
+nameRoot:       TransBeatnote_100mHzStart
+plotResult:     False     ## Whether to plot measured data when finished [True/False]
 plotRefs:       False     ## Whether to plot references with same nameRoot [True/False]
 refDir:         ./        ## Where the reference trace files are stored
 plotScales:     Log,Log   ## Scaling of x and y axes, respectively. [Linear,Log],[Log,Log], etc.
 saveFig:        False     ## If plotResult is true, saves a pdf with same filename [True/False]
-plotTitle:      SR785 Spectrum Measurement
+plotTitle:      Trans Spectrum Measurement
 
 # Measurement Parameters
 measType:       Spectrum
-spanFreq:       102.4kHz  ## Frequency span has only select values avalible
+spanFreq:       3.2kHz  ## Frequency span has only select values avalible
                           ## Consult the manual or SR785 options menu
-startFreq:      0Hz       ## Start frequency, [102.4kHz] Max
+startFreq:      1Hz       ## Start frequency, [102.4kHz] Max
 numOfPoints:    800       ## FFT lines: [100], [200], [400] or [800]
 numAvg:         25        ## Number of averages 
 

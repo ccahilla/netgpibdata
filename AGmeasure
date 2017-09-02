@@ -144,7 +144,10 @@ def main(paramFile=None, filename=None, ipAddress=None, gpibAddress=None,
                 time.strftime('%d-%m-%Y', time.localtime()) +
                 time.strftime('_%H%M%S', time.localtime()))
     dataFileName = fileRoot+fileExt
-    outDir = params['saveDir'];
+    outDir = os.path.expanduser(params['saveDir']); # Craig Cahillane - 20170829.  Expands '~' into home dir
+    # Check if outDir exists
+    if not os.path.exists(outDir):
+      os.makedirs(outDir)
 
     # If new measurement is requested, do it!
     if noParam is False:

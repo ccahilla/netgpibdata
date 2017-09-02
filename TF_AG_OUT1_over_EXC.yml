@@ -4,13 +4,13 @@ ipAddress:    10.0.1.61     ## IP or hostname of GPIB Device
 gpibAddress:  10        ## Port of GPIB device, 10 is default 
 
 # Output Parameters
-saveDir:      ~/Git/ctn_labdata/data/20170901_FSSTFs/     
-nameRoot:     North_Fast_EXC_to_OUT2_loopopen
+saveDir:      ~/Git/ctn_labdata/data/20170829_FSSTFs/
+nameRoot:     South_OUT1_over_EXC
 plotResult:   False      ## Whether to plot measured data when finished [True/False]
 plotRefs:     False     ## Whether to plot references with same nameRoot [True/False]
 refDir:       ./        ## Where the reference trace files are stored
-saveFig:      False     ## If plotResult is true, saves a pdf with same filename [True/False]
-plotTitle:    North Fast OUT2 over EXC with loop open
+saveFig:      False      ## If plotResult is true, saves a pdf with same filename [True/False]
+plotTitle:    South OUT1 over EXC
 
 # Measurement Parameters
 measType:     TF
@@ -18,7 +18,7 @@ startFreq:    100Hz      ## Start frequency
 stopFreq:     10MHz    ## Stop frequency, [300MHz] max
 numOfPoints:  1001       ## Sweep points, up to [801]
 sweepType:    Log       ## Sweep type: [Log] or [Linear]
-inputMode:    BR        ## Input of network analyzer ([AR]->A/R, [BR]->B/R)
+inputMode:    AR        ## Input of network analyzer ([AR]->A/R, [BR]->B/R)
 ifBandwidth:  100Hz     ## IF bandwidth, N*10*1Hz and N*10*3Hz only 
                         ## (i.e. [10kHz], [30kHz], [100kHz],...)
 
