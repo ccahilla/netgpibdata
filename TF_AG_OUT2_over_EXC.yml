@@ -4,13 +4,13 @@ ipAddress:    10.0.1.61     ## IP or hostname of GPIB Device
 gpibAddress:  10        ## Port of GPIB device, 10 is default 
 
 # Output Parameters
-saveDir:      ~/Git/ctn_labdata/data/20170831_FSSTFs/
-nameRoot:     South_Crossover_OUT2_over_EXC
+saveDir:      ~/Git/ctn_labdata/data/20170905_FSSTFs_tuningEOMServoNotch/
+nameRoot:     South_Common_posttune_OUT2_over_EXC
 plotResult:   False      ## Whether to plot measured data when finished [True/False]
 plotRefs:     False     ## Whether to plot references with same nameRoot [True/False]
 refDir:       ./        ## Where the reference trace files are stored
 saveFig:      False      ## If plotResult is true, saves a pdf with same filename [True/False]
-plotTitle:    South Crossover OUT2 over EXC
+plotTitle:    South Common posttune OUT2 over EXC
 
 # Measurement Parameters
 measType:     TF

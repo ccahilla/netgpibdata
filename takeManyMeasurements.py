@@ -3,7 +3,7 @@ import os
 import time
 import argparse
 
-parser = argparse.ArgumentParser(description='Usage: python takeManyTFs.py --command <input some command string> --number <input some int>')
+parser = argparse.ArgumentParser(description='Usage: python takeManyMeasurements.py --command <input some command string> --number <input some int>')
 parser.add_argument('--command', type=str, nargs=1, help='If defined, becomes the command line run <number> times')
 parser.add_argument('--number', type=int, nargs=1, help='If defined, becomes the number of measurements taken')
 

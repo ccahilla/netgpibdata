@@ -4,13 +4,13 @@ ipAddress:    10.0.1.61     ## IP or hostname of GPIB Device
 gpibAddress:  10        ## Port of GPIB device, 10 is default 
 
 # Output Parameters
-saveDir:      ~/Git/ctn_labdata/data/20170901_FSSTFs/     
-nameRoot:     North_Fast_EXC_to_OUT2_loopopen
+saveDir:      ~/Git/ctn_labdata/data/20170901_PLLTFs/     
+nameRoot:     PLL_EXC_to_OUT2
 plotResult:   False      ## Whether to plot measured data when finished [True/False]
 plotRefs:     False     ## Whether to plot references with same nameRoot [True/False]
 refDir:       ./        ## Where the reference trace files are stored
 saveFig:      False     ## If plotResult is true, saves a pdf with same filename [True/False]
-plotTitle:    North Fast OUT2 over EXC with loop open
+plotTitle:    PLL OUT2 over EXC
 
 # Measurement Parameters
 measType:     TF
@@ -24,6 +24,6 @@ ifBandwidth:  100Hz     ## IF bandwidth, N*10*1Hz and N*10*3Hz only
 
 # Analyzer Settings
 dataMode:     MagDeg     ## Data format, [dBDeg], [MagDeg] or [ReIm]
-excAmp:       0       ## Excitation amplitude (in dBm)
+excAmp:       -20       ## Excitation amplitude (in dBm)
 averages:     5         ## Number of averages
 attenuation:  auto      ## dB of input attenuation for each channel e.g. [20] or [auto] 
